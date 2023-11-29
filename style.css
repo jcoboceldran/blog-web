@@ -137,10 +137,20 @@ body, p, a, h1, h2, h3, h4, h5, h6, ul, li {
     height: 100vh;
 }
 
-#about-me a {
-    font-size: calc(0.75vw + 0.75vh);
-    color: var(--color1);
-    padding-bottom: 2vh;
+@media only screen and (min-width: 700px) {
+    #about-me a {
+        font-size: calc(0.75vw + 0.75vh);
+        color: var(--color1);
+        padding-bottom: 1vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #about-me a {
+        font-size: calc(1.5vw + 1.5vh);
+        color: var(--color1);
+        padding-bottom: 1vh;
+    }
 }
 
 #about-me p {
@@ -161,13 +171,13 @@ body, p, a, h1, h2, h3, h4, h5, h6, ul, li {
     align-items: center;
 }
 
-#works a {
-    font-size: calc(0.75vw + 0.75vh);
-    color: var(--color1);
-    padding-bottom: 2vh;
-}
-
 @media only screen and (min-width: 700px) {
+    #works a {
+        font-size: calc(0.75vw + 0.75vh);
+        color: var(--color1);
+        padding-bottom: 2vh;
+    }
+
     .work-container {
         display: flex;
         justify-content: center;
@@ -212,6 +222,12 @@ body, p, a, h1, h2, h3, h4, h5, h6, ul, li {
 }
 
 @media only screen and (max-width: 700px) {
+    #works a {
+        font-size: calc(1.5vw + 1.5vh);
+        color: var(--color1);
+        padding-bottom: 2vh;
+    }
+
     .work-container {
         display: flex;
         flex-direction: column;
@@ -228,6 +244,7 @@ body, p, a, h1, h2, h3, h4, h5, h6, ul, li {
         border-radius: 4vh;
         padding-left: 2vh;
         padding-right: 2vh;
+        padding-top: 2vh;
     }
 
     .work img {
