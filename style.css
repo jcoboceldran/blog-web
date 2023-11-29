@@ -89,6 +89,12 @@ body, p, a, h1, h2, h3, h4, h5, h6, ul, li {
     header a:hover {
         font-style: italic;
     }
+
+    #name {
+        color: var(--color2);
+        font-size: calc(1.3vw + 1.3vh);
+        font-weight: 300;    
+    }
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -113,7 +119,7 @@ body, p, a, h1, h2, h3, h4, h5, h6, ul, li {
     font-weight: 300;
 }
 
-#main a {
+#scroll {
     font-size: calc(1vw + 1vh);
     color: var(--color2);
     font-weight: 300;
