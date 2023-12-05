@@ -26,8 +26,8 @@ html {
         display: flex;
         align-items: center;
         margin-top: 2vh;
-        margin-left: 6vh;
-        margin-right: 6vh;
+        margin-left: 4vh;
+        margin-right: 4vh;
     }
 
     header p {
@@ -104,7 +104,7 @@ html {
 /* Main */
 
 #main {
-    margin: 2vh 2vw 0 2vw;
+    margin: 2vh 2vh 2vh 2vh;
     background: url('background9.jpg') center/200% no-repeat;
     /*background-color: red;*/
     border-radius: 4vh;
