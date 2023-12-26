@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
     <title>CE - Juan Cobo</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="english">
     <div class="name">
-        <img src="logo.png" alt="icon" class="logo">
+        <div class="gradient-circle"></div>
         <article class="title">
             <h1>Juan Cobo</h1>
             <p>Computer Engineer</p>
@@ -22,7 +22,7 @@
     <div class="about">
         <h2>ABOUT</h2>
         <section>
-            <p>Hey! I am Juan Cobo, a fourth-year student in Computer Engineering at Carlos III University of Madrid. I am passionate about data science and artificial intelligence engineering. Through various projects, I have developed a deep understanding of these matters, and I am looking forward to applying this knowledge professionally.</p>
+            <p>Hello! I am Juan Cobo, a fourth-year student in Computer Engineering at Carlos III University of Madrid. I am passionate about data science and artificial intelligence engineering. Through various projects, I have developed a deep understanding of these matters, and I am looking forward to applying this knowledge professionally.</p>
         </section>
     </div>
     <div class="part">
@@ -172,5 +172,19 @@
             </article>
         </section>
     </div> 
+    <script src="httpss://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        const element = document.querySelector('.gradient-circle');
+    
+        html2canvas(element).then(canvas => {
+            const image = canvas.toDataURL('image/png');
+    
+            // Create a link element to trigger the download
+            const link = document.createElement('a');
+            link.href = image;
+            link.download = 'gradient_circle.png';
+            link.click();
+        });
+    </script>
 </body>
 </html>
