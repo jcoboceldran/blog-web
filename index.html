@@ -11,11 +11,11 @@
     <title>CE - Juan Cobo</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="english">
+<body>
     <div class="name">
         <div class="gradient-circle"></div>
         <article class="title">
-            <h1>Juan Cobo</h1>
+            <h1>Juan Cobo <a href="#" id="toggleVariables" class="sun" onclick="toggleIcon()">🌙</a></h1>
             <p>Computer Engineer</p>
         </article>
     </div>
@@ -140,8 +140,7 @@
               <h3>Email</h3>
             </article>  
             <article class="right">
-                <a href="mailto:jcoboceldran@gmail.com" class="email">jcoboceldran@gmail.com</a>
-                <img src="arrow-link.svg" alt="icon">
+                <a href="mailto:jcoboceldran@gmail.com" class="email">jcoboceldran@gmail.com ↗</a>
             </article>
         </section>
         <section>
@@ -149,8 +148,7 @@
               <h3>Phone number</h3>
             </article>  
             <article class="right">
-                <a href="tel:+34663897122" class="number">+34 663 897 122</a>
-                <img src="arrow-link.svg" alt="icon">
+                <a href="tel:+34663897122" class="number">+34 663 897 122 ↗</a>
             </article>
         </section>
         <section>
@@ -158,8 +156,7 @@
               <h3>LinkedIn</h3>
             </article>  
             <article class="right">
-                <a href="https://www.linkedin.com/in/juan-cobo-celdr%C3%A1n/" class="linkedin">@juan-cobo-celdrán</a>
-                <img src="arrow-link.svg" alt="icon">
+                <a href="https://www.linkedin.com/in/juan-cobo-celdr%C3%A1n/" class="linkedin">@juan-cobo-celdrán ↗</a>
             </article>
         </section>
         <section>
@@ -167,24 +164,35 @@
               <h3>Curriculum</h3>
             </article>  
             <article class="right">
-                <a href="CV en.pdf"class="curriculum">pdf</a>
-                <img src="arrow-link.svg" alt="icon">
+                <a href="CV en.pdf"class="curriculum">pdf ↗</a>
             </article>
         </section>
     </div> 
-    <script src="httpss://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script>
-        const element = document.querySelector('.gradient-circle');
-    
-        html2canvas(element).then(canvas => {
-            const image = canvas.toDataURL('image/png');
-    
-            // Create a link element to trigger the download
-            const link = document.createElement('a');
-            link.href = image;
-            link.download = 'gradient_circle.png';
-            link.click();
-        });
-    </script>
+        const root = document.documentElement;
+        let isVariablesSet1 = true;   
+        function toggleVariables() {
+            if (isVariablesSet1) {
+                root.style.setProperty('--color1', '#FFFFFF');
+                root.style.setProperty('--color2', '#051c24');
+            } else {
+                root.style.setProperty('--color1', '#1318A4');
+                root.style.setProperty('--color2', '#ffffff');
+            }
+            isVariablesSet1 = !isVariablesSet1;
+        }
+        function toggleIcon() {
+        var toggleElement = document.getElementById('toggleVariables');
+        var currentIcon = toggleElement.innerHTML;
+
+            if (currentIcon.includes('🌙')) {
+                toggleElement.innerHTML = currentIcon.replace('🌙', '☀️');
+            } else {
+                toggleElement.innerHTML = currentIcon.replace('☀️', '🌙');
+            }
+        }
+        const toggleVariablesLink = document.getElementById('toggleVariables');
+        toggleVariablesLink.addEventListener('click', toggleVariables);
+    </script>  
 </body>
 </html>
