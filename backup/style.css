@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+    
+    --color1: #262626;
+    --color2: #e9e9e9;
+    /*
+    --color1: #FFFFFF;
+    --color2: #262626;
+    */
+    --font2: 'Lora', serif;
+    --font1: 'Inconsolata', monospace;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;  
+    font-size: 10pt;
+    font-weight: 300;
+    color: var(--color1);
+    font-style: normal;
+    text-align: left;
+}
+
+body {
+    width: 600px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-bottom: 10vh;
+}     
+
+h1 {
+    font-size: 25pt;
+    font-weight: 700;
+    font-family: var(--font2);
+    font-style: italic;
+}
+
+#toggleVariables {
+    font-size: 20pt;
+}
+h2 {
+    font-size: 15pt;
+    font-weight: 700;
+    font-family: var(--font1);
+}
+
+h3 {
+    font-size: 15pt;
+    font-weight: 600;
+    font-family: var(--font1);
+}
+
+p, a {
+    font-size: 15pt;
+    font-weight: 400;
+    font-family: var(--font1);
+    color: var(--color1);
+}
+
+.night-mode {
+    margin-left: auto;
+}
+
+/*Name*/
+
+.name {
+    display: flex;  
+    padding-top: 10vh; 
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    padding-right: 20px;
+}
+
+/*About*/
+
+.about section p, .works section h3 {
+    text-align: justify;
+}
+
+div {
+    padding-bottom: 5vh;
+}
+
+section {
+    display: flex;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+@media only screen and (max-width: 700px) {
+    section {
+        flex-direction: column;
+    }
+}
+
+.works section {
+    flex-direction: column;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 70%;
+}
+
+@media only screen and (max-width: 700px) {
+    .left {
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%;
+    }
+}
+
+
+.gradient-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #eeff00, #ff2a00);
+    /*background: radial-gradient(circle, #632b74, #ff6944);*/
+    padding-bottom: 0px;
+    margin-right: 20px;
+}

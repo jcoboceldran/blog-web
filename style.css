@@ -1,28 +1,41 @@
 html {
     scroll-behavior: smooth;
-    
-    --color1: #1318A4;
-    --color2: #ffffff;
     /*
-    --color1: #FCFBED;
-    --color2: #051c24;
+    --color1: #000000;
+    --color2: #ffffff;
     */
-    --font2: 'Lora', serif;
+    --color1: #FFFFFF;
+    --color2: #111111;
+    --color3: #dadada;
+    --color4: #9900ff;
     --font1: 'Inconsolata', monospace;
+    --font2: 'Hedvig Letters Serif', serif;
+    --size1: 16pt;
+    --size2: 14pt;
+    /*background: linear-gradient(0deg, #1a1a1a);*/
     background-color: var(--color2);
     display: flex;
     justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        --size1: 16pt;
+        --size2: 16pt;
+    }
 }
 
 * {
     margin: 0px;
     padding: 0px;
     text-decoration: none;  
-    font-size: 10pt;
+    font-size: var(--size1);
     font-weight: 300;
     color: var(--color1);
     font-style: normal;
-    text-align: left;
+    text-align: justify;
+    font-family: var(--font2);
 }
 
 body {
@@ -30,106 +43,137 @@ body {
     margin-left: 5vw;
     margin-right: 5vw;
     padding-bottom: 10vh;
-}     
-
-h1 {
-    font-size: 25pt;
-    font-weight: 700;
-    font-family: var(--font2);
-    font-style: italic;
 }
 
-#toggleVariables {
-    font-size: 20pt;
-}
-h2 {
-    font-size: 15pt;
-    font-weight: 700;
-    font-family: var(--font1);
-}
-
-h3 {
-    font-size: 15pt;
-    font-weight: 600;
-    font-family: var(--font1);
-}
-
-p, a {
-    font-size: 15pt;
-    font-weight: 400;
-    font-family: var(--font1);
-    color: var(--color1);
-}
-
-.night-mode {
-    margin-left: auto;
-}
-
-/*Name*/
-
-.name {
-    display: flex;  
-    padding-top: 10vh; 
-    align-items: center;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    padding-right: 20px;
-}
-
-/*About*/
-
-.about section p, .works section h3 {
-    text-align: justify;
-}
-
-div {
-    padding-bottom: 5vh;
-}
-
-section {
-    display: flex;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
-@media only screen and (max-width: 700px) {
-    section {
-        flex-direction: column;
+@media only screen and (max-width: 600px) {
+    body {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding-bottom: 10vh;
     }
 }
-
-.works section {
-    flex-direction: column;
-}
-
-.left {
-    width: 30%;
-}
-
-.right {
-    width: 70%;
-}
-
-@media only screen and (max-width: 700px) {
-    .left {
-        width: 100%;
-    }
-    
-    .right {
-        width: 100%;
-    }
-}
-
 
 .gradient-circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #eeff00, #ff2a00);
-    /*background: radial-gradient(circle, #632b74, #ff6944);*/
+    background: linear-gradient(45deg, #4400ff, #ff008c);
+    
     padding-bottom: 0px;
     margin-right: 20px;
 }
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.name-title {
+    font-size: 30pt;
+}
+
+.name-subtitle {
+    font-size: var(--size2);
+    font-family: var(--font1); 
+    color: var(--color4);  
+}
+
+.section {
+    margin-bottom: 8vh;
+}
+
+.title {
+    font-size: var(--size2);
+    font-family: var(--font1);
+    color: var(--color4);
+    margin-bottom: 1vh;
+}
+
+.subtitle {
+    font-size: var(--size2);
+    font-family: var(--font1);
+    color: var(--color3);
+    margin-top: 1vh;
+    text-align: right;
+}
+
+.subtitle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.story {
+    border-top: 1px solid var(--color1);
+    display: flex;
+}
+
+#last-story {
+    border-bottom: 1px solid var(--color1);
+}
+
+.story-title {
+    margin-top: 2vh;
+}
+
+.story-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.story-img {
+    width: 36vh;
+    height: 12vh;
+    background-color: #414a51;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+    border-radius: 4%;
+}
+
+.story-subtitle {
+    font-size: var(--size2);
+    font-family: var(--font1);
+    color: var(--color3);
+    margin-top: 0.75vh;
+    margin-bottom: 2vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links-title {
+    width: 200px;
+}
+
+.links-subtitle {
+    font-size: var(--size2);
+    font-family: var(--font1);
+    color: var(--color3);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.links-subtitle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .links-title {
+        width: auto;
+    }
+
+    .links-subtitle {
+        margin-left: 5vw;
+    }
+}
+
+
+
