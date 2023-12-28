@@ -1,16 +1,14 @@
 html {
     scroll-behavior: smooth;
-    /*
-    --color1: #000000;
-    --color2: #ffffff;
-    */
     --color1: #FFFFFF;
     --color2: #2a2a2a;
     --color3: #d1b5ff;
+    --color4: #6200ff;
     --font1: 'Inconsolata', monospace;
     --font2: 'Hedvig Letters Serif', serif;
     --size1: 16pt;
     --size2: 14pt;
+    --size3: 30pt;
     /*background: linear-gradient(0deg, #1a1a1a);*/
     background-color: var(--color2);
     display: flex;
@@ -22,6 +20,7 @@ html {
     html {
         --size1: 16pt;
         --size2: 16pt;
+        --size3: 24pt;
     }
 }
 
@@ -41,6 +40,7 @@ body {
     width: 600px;
     margin-left: 5vw;
     margin-right: 5vw;
+    margin-top: 10vh;
     padding-bottom: 10vh;
 }
 
@@ -51,35 +51,6 @@ body {
         margin-right: 5vw;
         padding-bottom: 10vh;
     }
-}
-
-.gradient-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #4400ff, #ff008c);
-    
-    padding-bottom: 0px;
-    margin-right: 20px;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-
-.name-title {
-    font-size: 30pt;
-    color: var(--color1);
-}
-
-.name-subtitle {
-    font-size: var(--size2);
-    font-family: var(--font1); 
-    color: var(--color3);  
 }
 
 .section {
@@ -146,6 +117,8 @@ body {
     margin-bottom: 2vh;
 }
 
+/* Links */
+
 .row {
     display: flex;
     flex-direction: row;
@@ -178,6 +151,3 @@ body {
         margin-left: 5vw;
     }
 }
-
-
-

@@ -1,0 +1,25 @@
+.entry-title {
+    font-size: var(--size3);
+    color: var(--color3);
+    text-align: left;
+    margin-top: 2vh;
+}
+
+.entry-subtitle {
+    font-size: var(--size2);
+    font-family: var(--font1);
+    margin-top: 0.75vh;
+    margin-bottom: 3vh;
+}
+
+.entry-paragraph {
+    font-size: var(--size2);
+    font-family: var(--font2);
+    padding-bottom: 3vh;
+}
+
+.highlight {
+    color: var(--color3);
+    font-size: var(--size2);
+    font-family: var(--font2);
+}
