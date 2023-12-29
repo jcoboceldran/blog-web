@@ -19,8 +19,8 @@
 }
 
 .entry-img {
-    width: 24vh;
-    height: 24vh;
+    width: 50%;
+    height: 50%;
     margin-top: 2vh;
     margin-bottom: 2vh;
     margin-left: 2vh;
@@ -45,6 +45,15 @@
     font-size: var(--size2);
     font-family: var(--font2);
     padding-bottom: 3vh;
+}
+
+.resource-img {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+    border-radius: 4%;
 }
 
 .highlight {
