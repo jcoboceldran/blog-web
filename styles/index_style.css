@@ -2,9 +2,14 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #4400ff, #ff008c);
-    
+    background: linear-gradient(45deg, #4400ff, #ff008c); 
     padding-bottom: 0px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
     margin-right: 20px;
 }
 
