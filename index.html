@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="gradient-circle"></div>
+        <img src="resources/logo3.png" alt="logo" class="logo">
         <div class="name">
             <p class="name-title">Juan Cobo</p>
             <p class="name-subtitle">computer engineer</p>
@@ -31,10 +31,10 @@
         <p class="title">top stories</p>
         <div class="story">
             <div class="story-text">
-                <a href="entry.html"><p class="story-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></a>
-                <p class="story-subtitle">dd / mm / yyyy</p>
+                <a href="entry.html"><p class="story-title">AI will be to the music industry what the camera was to the painting industry</p></a>
+                <p class="story-subtitle">29 / 11 / 2023</p>
             </div>
-            <div class="story-img"></div>
+            <img src="resources/img1.jpg" alt="entry1" class="story-img">
         </div>
         <div class="story">
             <div class="story-text">
@@ -59,9 +59,6 @@
         </div>
         <a href="blog.html"><p class="subtitle">more stories ↗</p></a>
     </div>
-    <div class="section">
-        <div id="gitalk-container"></div>
-    </div>
     <div class="links">
         <p class="title">links</p>
         <div class="row">
@@ -81,18 +78,5 @@
             <a href="resources/CV en.pdf"class="links-subtitle">pdf ↗</a>
         </div>
     </div>
-    <script>
-        const gitalk = new Gitalk({
-        clientID: '1ec3804030d59770c88a',
-        clientSecret: 'ffa7d16b3612a83d4e97317febbdff53595d65ce',
-        repo: 'jcoboceldran/JuanCoboBlog',
-        owner: 'jcoboceldran',
-        admin: ['jcoboceldran'],
-        id: location.pathname,
-        distractionFreeMode: false
-        });
-
-        gitalk.render('gitalk-container');
-    </script>
 </body>
 </html>
