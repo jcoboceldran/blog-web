@@ -151,3 +151,11 @@ body {
         margin-left: 5vw;
     }
 }
+
+.gt-header-textarea {
+    color: var(--color2);
+}
+
+.gt-btn-text {
+    color: var(--color2);
+}
