@@ -2,32 +2,73 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #4400ff, #ff008c); 
+    background: linear-gradient(45deg, var(--color4), var(--color3)); 
     padding-bottom: 0px;
-    margin-right: 20px;
 }
 
 .logo {
     height: 60px;
-    margin-right: 20px;
 }
 
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 10vh;
+    justify-content: center;
 }
 
 .name-title {
-    font-size: 30pt;
+    font-size: 40pt;
     color: var(--color1);
+    font-weight: 800;
+    text-align: center;
 }
 
 .name-subtitle {
     font-size: var(--size2);
     font-family: var(--font1); 
+    color: var(--color3); 
+    font-weight: 800; 
+    text-align: center;
+}
+
+.story {
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+.story-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.story-img {
+    width: 20%;
+    height: 20%;
+    margin-right: 1vw;
+    border-radius: 4%;
+}
+
+.story-subtitle {
+    font-size: var(--size2);
+    font-family: var(--font1);
     color: var(--color3);  
+}
+
+
+@media only screen and (max-width: 600px) {
+    .story-title {
+        margin-left: 2vw;
+    }
+
+    .story-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .story-subtitle {
+        margin-left: 2vw;  
+    }
 }
 
 

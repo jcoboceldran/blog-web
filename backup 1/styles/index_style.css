@@ -1,0 +1,36 @@
+.gradient-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #4400ff, #ff008c); 
+    padding-bottom: 0px;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.name-title {
+    font-size: 30pt;
+    color: var(--color1);
+}
+
+.name-subtitle {
+    font-size: var(--size2);
+    font-family: var(--font1); 
+    color: var(--color3);  
+}
+
+
+
+
+

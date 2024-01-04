@@ -1,0 +1,33 @@
+.topics {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .topics {
+        flex-direction: column;
+
+    }
+
+    .topic {
+        margin: 1vh;
+        text-align: center;   
+    }
+}
+
+.topic {
+    font-family: var(--font1);
+    color: var(--color1);
+    background-color: var(--color4);
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+.topic:hover {
+    cursor: pointer;
+    background-color: var(--color3);
+}
+
+
+
