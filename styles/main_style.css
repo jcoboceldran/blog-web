@@ -13,6 +13,10 @@ html {
     --weight1: 400;
     --weight2: 700;
     background-color: var(--color2);
+    /*background-image: url('../resources/index/background.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
     display: flex;
     justify-content: center;
 }
@@ -37,18 +41,21 @@ html {
 }
 
 body {
-    width: 600px;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    width: 700px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: var(--color2);
 }
 
 @media only screen and (max-width: 600px) {
     body {
         width: 90vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
 }
 

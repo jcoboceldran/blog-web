@@ -6,20 +6,33 @@
     padding-bottom: 0px;
 }
 
-.logo {
-    height: 60px;
-}
-
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    /*background-image: url('../resources/index/background.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    padding: 50px;
+    border-radius: 20px;*/
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 60px;
+    justify-self: center;
 }
 
 .name-title {
-    font-size: 40pt;
-    color: var(--color3);
+    font-size: 24pt;
+    color: var(--color1);
     font-weight: 800;
     text-align: center;
 }
@@ -27,7 +40,7 @@
 .name-subtitle {
     font-size: var(--size2);
     font-family: var(--font1); 
-    color: var(--color1); 
+    color: var(--color3); 
     font-weight: 700; 
     text-align: center;
 }
