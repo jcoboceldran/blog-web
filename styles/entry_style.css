@@ -47,6 +47,7 @@
         height: 100%;
         margin-left: 0vh;
         border-radius: 4%;
+        margin-bottom: 1vh;
     }
 }
 
@@ -77,5 +78,9 @@ body {
 @media only screen and (max-width: 600px) {
     body {
         margin-top: 0vh;
+    }
+
+    .section {
+        margin-top: 1vh;
     }
 }
