@@ -19,6 +19,7 @@
     font-size: var(--size2);
     font-family: var(--font1);
     color: var(--color3);
+    font-weight: var(--weight2); 
 }
 
 .entry-img {

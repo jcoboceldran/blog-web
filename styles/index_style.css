@@ -28,7 +28,7 @@
     font-size: var(--size2);
     font-family: var(--font1); 
     color: var(--color1); 
-    font-weight: 800; 
+    font-weight: 700; 
     text-align: center;
 }
 
@@ -52,7 +52,8 @@
 .story-subtitle {
     font-size: var(--size2);
     font-family: var(--font1);
-    color: var(--color3);  
+    color: var(--color3); 
+    font-weight: var(--weight2);  
 }
 
 
