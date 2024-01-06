@@ -3,15 +3,17 @@ html {
     --color1: #edf2f4;
     --color2: #2c2c2c;
     --color3: #aaa0d1;
-    /*--color1: #2c2c2c;
-    --color2: #edf2f4;
-    --color3: #66617a;*/
-    font-family: 'Syne', sans-serif;
+    /*--color1: #000000;
+    --color2: #fefff4;
+    --color3: #3700ff;*/
+    --font2: 'Syne', sans-serif;
+    font-family: 'Inter', sans-serif;
     --size1: 16pt;
     --size2: 12pt;
     --size3: 20pt;
-    --weight1: 400;
+    --weight1: 300;
     --weight2: 700;
+    --weight3: 800;
     background-color: var(--color2);
     /*background-image: url('../resources/index/background.jpeg');
     background-size: cover; 
@@ -34,7 +36,7 @@ html {
     padding: 0px;
     text-decoration: none;  
     font-size: var(--size1);
-    font-weight: 400;
+    font-weight: var(--weight1);
     color: var(--color1);
     font-style: normal;
     text-align: left;
@@ -64,6 +66,7 @@ body {
 }
 
 .title {
+    font-family: var(--font2);
     font-size: var(--size2);
     color: var(--color3);
     font-weight: var(--weight2); 
@@ -71,6 +74,7 @@ body {
 }
 
 .subtitle {
+    font-family: var(--font2);
     font-size: var(--size2);
     color: var(--color3);
     text-align: right;

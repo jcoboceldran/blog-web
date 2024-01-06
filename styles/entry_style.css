@@ -8,16 +8,17 @@
 }
 
 .entry-title {
+    font-family: var(--font2);
     font-size: var(--size3);
     color: var(--color1);
-    font-weight: 800;
+    font-weight: var(--weight3);
     text-align: left;
     width: 100%;
 }
 
 .entry-subtitle {
+    font-family: var(--font2);
     font-size: var(--size2);
-    font-family: var(--font1);
     color: var(--color3);
     font-weight: var(--weight2); 
 }
@@ -54,7 +55,6 @@
 
 .entry-paragraph {
     font-size: var(--size2);
-    font-family: var(--font2);
     font-size: var(--size1);
     margin-top: 3vh;
     text-align: justify;

@@ -31,17 +31,18 @@
 }
 
 .name-title {
+    font-family: var(--font2);
     font-size: 24pt;
     color: var(--color1);
-    font-weight: 800;
+    font-weight: var(--weight3);
     text-align: center;
 }
 
 .name-subtitle {
+    font-family: var(--font2);
     font-size: var(--size2);
-    font-family: var(--font1); 
     color: var(--color3); 
-    font-weight: 700; 
+    font-weight: var(--weight2); 
     text-align: center;
 }
 
@@ -63,8 +64,8 @@
 }
 
 .story-subtitle {
+    font-family: var(--font2);
     font-size: var(--size2);
-    font-family: var(--font1);
     color: var(--color3); 
     font-weight: var(--weight2);  
 }
