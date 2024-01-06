@@ -32,8 +32,8 @@
 
 .name-title {
     font-family: var(--font2);
-    font-size: 24pt;
-    color: var(--color1);
+    font-size: var(--size3);
+    color: var(--color4);
     font-weight: var(--weight3);
     text-align: center;
 }
