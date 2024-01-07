@@ -13,14 +13,13 @@ html {
     --h3-size: 10pt;
     --p-size: 12pt;
     --h1-weight: 500;
-    --h2-weight: 500;
-    --a-weight: 400;
+    --h2-weight: 400;
     --h3-weight: 400;
     --p-weight: 400;
     --h1-color: #ffffff;
     --h2-color: #ffffff;
     --h3-color: #868686;
-    --p-color: #a4a4a4;
+    --p-color: #bdbdbd;
     background-color: #000000;
 }
 
@@ -85,7 +84,7 @@ h2 {
 
 a {
     font-size: var(--h2-size);
-    font-weight: var(--a-weight);
+    font-weight: var(--h2-weight);
     color: var(--h2-color);
 }
 
