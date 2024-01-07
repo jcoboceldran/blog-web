@@ -1,6 +1,6 @@
 @font-face {
     font-family: CustomFont;
-    src: url('../resources/boba-mono.otf') format('opentype');
+    src: url('../resources/retro_computer_personal_use.ttf') format('truetype');
 }
 
 html {
@@ -8,12 +8,13 @@ html {
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
-    --h1-size: 30pt;
+    --h1-size: 20pt;
     --h2-size: 12pt;
     --h3-size: 10pt;
     --p-size: 12pt;
-    --h1-weight: 300;
-    --h2-weight: 400;
+    --h1-weight: 500;
+    --h2-weight: 500;
+    --a-weight: 400;
     --h3-weight: 400;
     --p-weight: 400;
     --h1-color: #ffffff;
@@ -25,7 +26,7 @@ html {
 
 @media only screen and (max-width: 600px) {
     html {
-        --h1-size: 22pt;
+        --h1-size: 20pt;
     }
 }
 
@@ -84,7 +85,7 @@ h2 {
 
 a {
     font-size: var(--h2-size);
-    font-weight: var(--h2-weight);
+    font-weight: var(--a-weight);
     color: var(--h2-color);
 }
 
