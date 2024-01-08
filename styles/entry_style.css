@@ -6,3 +6,19 @@ h4 {
     color: var(--h2-color);
 }
 
+h3 {
+    padding-top: 0.5vh;
+}
+
+div {
+    padding-top: 2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
