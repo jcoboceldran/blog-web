@@ -1,1 +1,1 @@
-# Portfolio web page for Juan Cobo
+# Blog web
